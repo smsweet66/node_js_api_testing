@@ -1,6 +1,6 @@
 import { Request, Response, NextFunction } from 'express';
 
-async function addHandler(req: Request, res: Response, next: NextFunction) {
+async function addHandler(req: Request, res: Response) {
 	let a = +req.params.a;
 	let b = +req.params.b;
 
